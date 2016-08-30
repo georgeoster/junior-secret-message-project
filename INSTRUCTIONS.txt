@@ -1,0 +1,17 @@
+the folder named  “encoder” contains the main.c file and the compiled file which i named encode.
+to run the program, 
+1) write the message you want to encode in a .txt file and save it in the same directory.
+2) put the .ppm file you wish to hide the message in in the same folder.
+3) from the command line, type the following:
+
+./encode stuff.txt TU.ppm output.ppm
+
+where encode is the name of the compiled program, stuff.txt contains the message you want to encode, TU.ppm is the picture you wish to hide the message in, and output.ppm is the desired filename for the altered picture.
+
+to decode the message,
+1) copy output.ppm(the picture which now contains the message) to the same folder as the compiled decoder.
+2) from the command line, type the following:
+
+./decode output.ppm
+
+where decode is the name of the compiled program, and output.ppm is the name of the file which contains the hidden message.
